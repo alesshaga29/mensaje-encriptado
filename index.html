@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charsert="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+        integrity="sha384-4LISF5TTJX/fLmGSxO53rV4miRxdg84mZsxmO8Rx5jGtp/LbrixFETvWa5a6sESd" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Encriptador Challenge</title>
+</head>
+
+<body>
+    <h1>Descubre el mensaje secreto</h1>
+    <p>Solo letras minúsculas y sin acentos</p>
+    <div class="contenedor">
+        <div class="contenedor-izquierdo">
+            <textarea name="texto" id="text-area" cols="30" rows="10" placeholder="ingresa el texto aqui"
+                class="text-area" onkeyup="validarTexto()"></textarea>
+            <div class="botones-accion">
+                <button id="encriptar" class="boton-basico" onclick="mostrarMensajeEncriptado()">
+                    <span>Encriptar</span></button>
+                <button id="desencriptar" class="boton-basico"
+                    onclick="mostrarMensajeDesencriptado()"><span>Desencriptar</span></button>
+            </div>
+        </div>
+        <div class="contenedor-derecho">
+            <div id="seccion-defecto" class="seccion-defecto">
+                <img src="img/Muñeco.jpg" alt="">
+                <p class="mensaje-defecto mensaje-no-encontrado">Ningun mensaje fue encontrado</p>
+                <p class="mensaje-defecto mensaje-instrucciones">Ingresa el texto que deseas encriptar o
+                    desencriptar</p>
+            </div>
+
+            <div id="seccion-resultado" class="seccion-resultado desaparecer">
+                <div id="resultado-texto" class="texto-resultado"></div>
+                <button class="boton-basico" onclick="copiarTexto()"><span>Copiar</span></button>
+            </div>
+        </div>
+
+    </div>
+    <footer class="rodapie">
+        <p class="datos">Alejandra Andrade</p>
+        <a href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile"
+            target="_blank" class="icono-linkedin"><i class="bi bi-linkedin"></i></a>
+    </footer>
+    <script src="mensaje.js"></script>
+</body>
+
+</html>

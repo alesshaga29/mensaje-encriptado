@@ -1,0 +1,130 @@
+body {
+    background: #5d4e79;
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    color: #e4dfed;
+}
+
+h1, p{
+    text-align:center;
+    font-family: sans-serif;
+}
+
+
+.contenedor {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.contenedor-izquierdo {
+    width: 60%;
+}
+
+.text-area {
+    width: 100%;
+    padding: 0px;
+    border: none;
+    resize: none;
+    font-size: 20px;
+    font-family: sans-serif;
+    text-align:center;
+}
+
+.botones-accion {
+    display: flex;
+    justify-content: center;
+    gap: 1%;
+}
+
+
+.contenedor-derecho {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 30%;
+}
+
+.mensaje-defecto {
+    text-align: center;
+}
+
+.mensaje-no-encontrado {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.mensaje-instrucciones {
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.texto-resultado {
+    font-size: 24px;
+    text-align: center;
+}
+
+.seccion-resultado {
+    height: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+}
+
+.desaparecer {
+    display: none;
+}
+
+
+
+.boton-basico {
+    border: 0;
+    background-image: linear-gradient(150deg,
+            #9500ff,
+            #09f,
+            #00ddff);
+    border-radius: 8px;
+    color: #fff;
+    display: flex;
+    font-size: 18px;
+    padding: 4px;
+    cursor: pointer;
+    transition: .3s;
+    width: 100%;
+}
+
+.boton-basico span {
+    background-color: #111;
+    padding: 16px 24px;
+    border-radius: 6px;
+    transition: .3s;
+    width: 100%;
+}
+
+.boton-basico:hover span {
+    background: none;
+}
+
+.boton-deshabilitado{
+    background-color: #7c7d80;
+    background-image: none;
+}
+.boton-deshabilitado span {
+    background-color: #7c7d80;
+}
+
+
+.rodapie{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.datos{
+    font-size: 14px;
+    font-weight: 200;
+    margin: 8px 0px;
+}
+.icono-linkedin, .icono-linkedin:link, .icono-linkedin:visited, .icono-linkedin:active{
+    text-decoration: none;
+    color: #e4dfed;
+}
